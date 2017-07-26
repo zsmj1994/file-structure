@@ -9,7 +9,18 @@ class JsonOutlineProvider {
 	constructor() {
 		vscode.workspace.onDidChangeTextDocument(e => {})
 		this.parseTree();
+		vscode.regis
 	}
+
+
+	getChildren() {
+
+	}
+
+	getTreeItem() {
+
+	}
+
 
 	parseTree() {
 		this.tree = null;

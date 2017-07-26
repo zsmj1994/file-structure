@@ -24,7 +24,7 @@
     "contributes": {
         "commands": [{
             "command": "fileStructure.refreshEntry",
-            "title": "Refresh",
+            "title": "Structure",
             "icon": {
                 "light": "resources/light/refresh.svg",
                 "dark": "resources/dark/refresh.svg"
