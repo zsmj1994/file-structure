@@ -16,11 +16,9 @@
     ],
     "icon": "./media/icons/logo.ico",
     "activationEvents": [
-        "onView:fileStructure",
-        "onLanguage:javascript",
-        "*"
+        "onView:fileStructure"
     ],
-    "main": "./src/extension",
+    "main": "./extension",
     "contributes": {
         "commands": [{
             "command": "fileStructure.refreshEntry",
@@ -33,7 +31,8 @@
         "views": {
             "explorer": [{
                 "id": "fileStructure",
-                "name": "structure"
+                "name": "structure",
+                "when": "resourceLangId == 'json'"
             }]
         },
         "menus": {
